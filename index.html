@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>What's for Lunch? - Build Your Favorite Meal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/site.webmanifest" />
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#FFD93F" />
+    <meta name="msapplication-TileColor" content="#ffd93f" />
+    <meta name="theme-color" content="#ffd93f" />
+    <meta
+      name="description"
+      content="Build your guilty pleasure meal or let us choose for you!"
+    />
+    <meta
+      property="og:image"
+      content="https://leoyouyang.github.io/whats-for-lunch/images/WhatsForLunch.png"
+    />
+  </head>
+
+  <body>
+    <h1>What's for Lunch?</h1>
+    <canvas id="preview" width="1264" height="800"></canvas>
+    <div id="options">
+      <div>
+        <span class="title">ENTREE<br /></span>
+        <button class="item selected" id="sandwich">Sandwich</button>
+        <button class="item" id="pizza">Pizza</button>
+        <button class="item" id="hotdog">Hot Dog</button>
+      </div>
+      <div>
+        <span class="title">SIDE<br /></span>
+        <button class="item selected" id="fries">Fries</button>
+        <button class="item" id="donut">Donut</button>
+        <button class="item" id="friesdonut">Both</button>
+      </div>
+      <div>
+        <span class="title">DRINK<br /></span>
+        <button class="item selected" id="coke">Coke</button>
+        <button class="item" id="milkshake">Milkshake</button>
+        <button class="item" id="smoothie">Smoothie</button>
+      </div>
+      <div id="function-buttons">
+        <a id="random">Choose for Me!</a>
+        <a href="#" id="save" download="WhatsForLunch.png">Save</a>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
