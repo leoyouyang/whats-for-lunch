@@ -1,5 +1,3 @@
-import "./styles.css";
-
 let canvas = document.getElementById("preview");
 let ctx = canvas.getContext("2d");
 let button = document.getElementsByClassName("item");
